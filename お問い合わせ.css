@@ -1,0 +1,167 @@
+/* 基本スタイル */
+body {
+    background-color: rgba(0, 0, 0, 0.945);
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ヘッダー */
+header {
+    padding: 27px 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 1000;
+    letter-spacing: -0.04em;
+}
+.logo img {
+    padding-top: 10px;
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+.logo span {
+    color: #00eeff;
+    font-size: 50px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin-left: 40px;
+}
+.nav-links li a {
+    color: #30c749;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-links li a:hover {
+    color: #00eeff;
+    transition: 0.3s;
+}
+
+/* お問い合わせフォーム */
+#contact {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #111;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00eeff;
+}
+#contact p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: left;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+}
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #00eeff;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-form button:hover {
+    background-color: #0088aa;
+}
+
+/* SNSセクション */
+#social {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+#social h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+#social p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.social-icon.youtube:hover {
+    transform: scale(1.1);
+    color: #ff0000;
+}
+.social-icon.instagram:hover {
+    transform: scale(1.1);
+    color: #e1306c;
+}
+.social-icon.line:hover {
+    transform: scale(1.1);
+    color: #06c755;
+}
