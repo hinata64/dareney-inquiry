@@ -15,17 +15,20 @@
 <body>
     <header>
         <div class="container flex pop">
-            <a href="https://hinata64.github.io/dareney_web/" class="logo">
-                <img src="https://raw.githubusercontent.com/hinata64/dareney-icon/main/icon.png" alt="ロゴ">
-                <span>DARENEY</span>
+             <a href=""class="logo">
+                <img src="dareney-icon.png" alt="ロゴ" >
+              <span>DARENEY</span>
             </a>
-            <nav>
-                <ul class="nav-links flex">
-                    <li><a href="https://hinata64.github.io/dareney-basic/">基本情報</a></li>
-                    <li><a href="https://hinata64.github.io/-/">高校検索</a></li>
-                    <li><a href="https://hinata64.github.io/dareney-inquiry/">お問い合わせ</a></li>
-                </ul>
-            </nav>
+            <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+             <nav id="nav">
+            <ul class="nav-links flex">
+                <li><a href="https://hinata64.github.io/dareney-basic/">基本情報</a></li>
+                <li><a href="https://hinata64.github.io/-/">高校検索</a></li>
+                <li><a href="https://hinata64.github.io/dareney-inquiry/">お問い合わせ</a></li>
+            </ul>
+          </nav>
         </div>
     </header>
     
@@ -44,12 +47,12 @@
                 <h2>公式SNS</h2>
                 <p>最新情報をチェック！</p>
                 <div class="social-links">
-                    <a href="https://www.youtube.com/@D4RENEY" target="_blank" class="social-icon youtube">
-                        <img src="https://www.youtube.com/img/desktop/yt_1200.png" alt="YouTube">
+                   <a href="https://www.youtube.com/@D4RENEY" target="_blank" class="social-icon youtube">
+                        <img src="https://images.icon-icons.com/1488/PNG/512/5295-youtube-i_102568.png" alt="YouTube">
                         <span>YouTube</span>
                     </a>
                     <a href="https://www.instagram.com/dareney_jyuken/" target="_blank" class="social-icon instagram">
-                        <img src="https://store-images.s-microsoft.com/image/apps.43327.13510798887167234.cadff69d-8229-427b-a7da-21dbaf80bd81.79b8f512-1b22-45d6-9495-881485e3a87e" alt="Instagram">
+                        <img src="https://marketplace.canva.com/sVQVQ/MAGakrsVQVQ/1/tl/canva-instagram-camera-square-icon-instagram-gradient-app-MAGakrsVQVQ.png" alt="Instagram">
                         <span>Instagram</span>
                     </a>
                     <a href="https://line.me/R/ti/p/@895hjlzr" target="_blank" class="social-icon line">
@@ -59,6 +62,14 @@
                 </div>
             </div>
         </section>
+ <script>
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
   
     </main>
 </body>
